@@ -15,6 +15,7 @@
 		065F24AB258D35A70085F100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065F24A9258D35A70085F100 /* LaunchScreen.storyboard */; };
 		065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */; };
 		065F24E5258D384B0085F100 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D2258D38200085F100 /* libTestLib.a */; };
+		065F24ED258D39630085F100 /* AppFramework.framework in Copy Files EarlGreyV2 */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,20 @@
 			remoteInfo = TestLib;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		065F24EC258D392C0085F100 /* Copy Files EarlGreyV2 */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../SampleTool.app/Frameworks";
+			dstSubfolderSpec = 0;
+			files = (
+				065F24ED258D39630085F100 /* AppFramework.framework in Copy Files EarlGreyV2 */,
+			);
+			name = "Copy Files EarlGreyV2";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		065F249B258D35A40085F100 /* SampleTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +192,7 @@
 				065F24B3258D37E70085F100 /* Sources */,
 				065F24B4258D37E70085F100 /* Frameworks */,
 				065F24B5258D37E70085F100 /* Resources */,
+				065F24EC258D392C0085F100 /* Copy Files EarlGreyV2 */,
 			);
 			buildRules = (
 			);
