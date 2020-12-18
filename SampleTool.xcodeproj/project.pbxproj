@@ -24,6 +24,34 @@
 			remoteGlobalIDString = 065F249A258D35A40085F100;
 			remoteInfo = SampleTool;
 		};
+		065F24CB258D38200085F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065F24C3258D38200085F100 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD62395120F56A9700049E81;
+			remoteInfo = CommonLib;
+		};
+		065F24CD258D38200085F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065F24C3258D38200085F100 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FDF9E03520F82D090005DCF2;
+			remoteInfo = UILib;
+		};
+		065F24CF258D38200085F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065F24C3258D38200085F100 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD623A4920F957BE00049E81;
+			remoteInfo = AppFramework;
+		};
+		065F24D1258D38200085F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065F24C3258D38200085F100 /* EarlGrey.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FD5048F820FB225100261CBE;
+			remoteInfo = TestLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +66,7 @@
 		065F24B7258D37E70085F100 /* EarlGreyV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarlGreyV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyV2UITests.swift; sourceTree = "<group>"; };
 		065F24BB258D37E70085F100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		065F24C3258D38200085F100 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +90,7 @@
 		065F2492258D35A40085F100 = {
 			isa = PBXGroup;
 			children = (
+				065F24C3258D38200085F100 /* EarlGrey.xcodeproj */,
 				065F249D258D35A40085F100 /* SampleTool */,
 				065F24B8258D37E70085F100 /* EarlGreyV2UITests */,
 				065F249C258D35A40085F100 /* Products */,
@@ -97,6 +127,17 @@
 				065F24BB258D37E70085F100 /* Info.plist */,
 			);
 			path = EarlGreyV2UITests;
+			sourceTree = "<group>";
+		};
+		065F24C4258D38200085F100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				065F24CC258D38200085F100 /* libCommonLib.a */,
+				065F24CE258D38200085F100 /* libUILib.a */,
+				065F24D0258D38200085F100 /* AppFramework.framework */,
+				065F24D2258D38200085F100 /* libTestLib.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +207,12 @@
 			mainGroup = 065F2492258D35A40085F100;
 			productRefGroup = 065F249C258D35A40085F100 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 065F24C4258D38200085F100 /* Products */;
+					ProjectRef = 065F24C3258D38200085F100 /* EarlGrey.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				065F249A258D35A40085F100 /* SampleTool */,
@@ -173,6 +220,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		065F24CC258D38200085F100 /* libCommonLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCommonLib.a;
+			remoteRef = 065F24CB258D38200085F100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		065F24CE258D38200085F100 /* libUILib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUILib.a;
+			remoteRef = 065F24CD258D38200085F100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		065F24D0258D38200085F100 /* AppFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AppFramework.framework;
+			remoteRef = 065F24CF258D38200085F100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		065F24D2258D38200085F100 /* libTestLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestLib.a;
+			remoteRef = 065F24D1258D38200085F100 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		065F2499258D35A40085F100 /* Resources */ = {
