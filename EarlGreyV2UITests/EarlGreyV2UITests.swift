@@ -1,5 +1,15 @@
 import XCTest
 
+private extension XCTestCase {
+  /// A variable to point to the GREYHostApplicationDistantObject since casts in Swift fail on
+  /// proxy types. Hence we have to perform an unsafeBitCast.
+  var host: SwiftTestsHost {
+    return unsafeBitCast(
+      GREYHostApplicationDistantObject.sharedInstance,
+      to: SwiftTestsHost.self)
+  }
+}
+
 class EarlGreyV2UITests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -22,5 +32,9 @@ class EarlGreyV2UITests: XCTestCase {
 
         EarlGrey.selectElement(with: grey_keyWindow())
             .perform(grey_tap())
+    }
+
+    func testInterfaceOrientation() {
+      XCTAssertEqual(host.interfaceOrientation(), UIInterfaceOrientation.portrait)
     }
 }
