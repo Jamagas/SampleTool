@@ -14,6 +14,7 @@
 		065F24A8258D35A70085F100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065F24A7258D35A70085F100 /* Assets.xcassets */; };
 		065F24AB258D35A70085F100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065F24A9258D35A70085F100 /* LaunchScreen.storyboard */; };
 		065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */; };
+		065F24E5258D384B0085F100 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D2258D38200085F100 /* libTestLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065F24E5258D384B0085F100 /* libTestLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,7 @@
 				065F249D258D35A40085F100 /* SampleTool */,
 				065F24B8258D37E70085F100 /* EarlGreyV2UITests */,
 				065F249C258D35A40085F100 /* Products */,
+				065F24E4258D384B0085F100 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +141,13 @@
 				065F24D2258D38200085F100 /* libTestLib.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		065F24E4258D384B0085F100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
