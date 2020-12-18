@@ -608,6 +608,7 @@
 		065F2506258D3B490085F100 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/SampleTool.app/SampleTool";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EarlGreyV2Bundle/Info.plist;
@@ -625,6 +626,7 @@
 		065F2507258D3B490085F100 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/SampleTool.app/SampleTool";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EarlGreyV2Bundle/Info.plist;
