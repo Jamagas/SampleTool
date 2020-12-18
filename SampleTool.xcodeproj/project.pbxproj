@@ -619,6 +619,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/EarlGrey/**";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -637,6 +638,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/EarlGrey/**";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
