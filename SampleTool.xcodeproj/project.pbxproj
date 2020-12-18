@@ -13,7 +13,18 @@
 		065F24A6258D35A40085F100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065F24A4258D35A40085F100 /* Main.storyboard */; };
 		065F24A8258D35A70085F100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065F24A7258D35A70085F100 /* Assets.xcassets */; };
 		065F24AB258D35A70085F100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065F24A9258D35A70085F100 /* LaunchScreen.storyboard */; };
+		065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		065F24BC258D37E70085F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065F2493258D35A40085F100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 065F249A258D35A40085F100;
+			remoteInfo = SampleTool;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		065F249B258D35A40085F100 /* SampleTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		065F24A7258D35A70085F100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		065F24AA258D35A70085F100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		065F24AC258D35A70085F100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		065F24B7258D37E70085F100 /* EarlGreyV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarlGreyV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyV2UITests.swift; sourceTree = "<group>"; };
+		065F24BB258D37E70085F100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		065F2498258D35A40085F100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065F24B4258D37E70085F100 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				065F249D258D35A40085F100 /* SampleTool */,
+				065F24B8258D37E70085F100 /* EarlGreyV2UITests */,
 				065F249C258D35A40085F100 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				065F249B258D35A40085F100 /* SampleTool.app */,
+				065F24B7258D37E70085F100 /* EarlGreyV2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				065F24AC258D35A70085F100 /* Info.plist */,
 			);
 			path = SampleTool;
+			sourceTree = "<group>";
+		};
+		065F24B8258D37E70085F100 /* EarlGreyV2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */,
+				065F24BB258D37E70085F100 /* Info.plist */,
+			);
+			path = EarlGreyV2UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 065F249B258D35A40085F100 /* SampleTool.app */;
 			productType = "com.apple.product-type.application";
 		};
+		065F24B6258D37E70085F100 /* EarlGreyV2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065F24BE258D37E70085F100 /* Build configuration list for PBXNativeTarget "EarlGreyV2UITests" */;
+			buildPhases = (
+				065F24B3258D37E70085F100 /* Sources */,
+				065F24B4258D37E70085F100 /* Frameworks */,
+				065F24B5258D37E70085F100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				065F24BD258D37E70085F100 /* PBXTargetDependency */,
+			);
+			name = EarlGreyV2UITests;
+			productName = EarlGreyV2UITests;
+			productReference = 065F24B7258D37E70085F100 /* EarlGreyV2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +148,10 @@
 				TargetAttributes = {
 					065F249A258D35A40085F100 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					065F24B6258D37E70085F100 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 065F249A258D35A40085F100;
 					};
 				};
 			};
@@ -115,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				065F249A258D35A40085F100 /* SampleTool */,
+				065F24B6258D37E70085F100 /* EarlGreyV2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +182,13 @@
 				065F24AB258D35A70085F100 /* LaunchScreen.storyboard in Resources */,
 				065F24A8258D35A70085F100 /* Assets.xcassets in Resources */,
 				065F24A6258D35A40085F100 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065F24B5258D37E70085F100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		065F24B3258D37E70085F100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		065F24BD258D37E70085F100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 065F249A258D35A40085F100 /* SampleTool */;
+			targetProxy = 065F24BC258D37E70085F100 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		065F24A4258D35A40085F100 /* Main.storyboard */ = {
@@ -317,6 +395,42 @@
 			};
 			name = Release;
 		};
+		065F24BF258D37E70085F100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EarlGreyV2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = darius.sabaliauskas.EarlGreyV2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleTool;
+			};
+			name = Debug;
+		};
+		065F24C0258D37E70085F100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EarlGreyV2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = darius.sabaliauskas.EarlGreyV2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SampleTool;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +448,15 @@
 			buildConfigurations = (
 				065F24B0258D35A70085F100 /* Debug */,
 				065F24B1258D35A70085F100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		065F24BE258D37E70085F100 /* Build configuration list for PBXNativeTarget "EarlGreyV2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065F24BF258D37E70085F100 /* Debug */,
+				065F24C0258D37E70085F100 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
