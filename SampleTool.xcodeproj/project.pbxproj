@@ -18,6 +18,7 @@
 		065F24ED258D39630085F100 /* AppFramework.framework in Copy Files EarlGreyV2 */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		065F24F1258D39A70085F100 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24F0258D39A70085F100 /* EarlGrey.swift */; };
 		065F250D258D3D3C0085F100 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		065F250F258D3E3E0085F100 /* EarlGreyV2Bundle.bundle in Copy Files EarlGreyV2Bundle */ = {isa = PBXBuildFile; fileRef = 065F2502258D3B480085F100 /* EarlGreyV2Bundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,17 @@
 				065F24ED258D39630085F100 /* AppFramework.framework in Copy Files EarlGreyV2 */,
 			);
 			name = "Copy Files EarlGreyV2";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		065F250E258D3E080085F100 /* Copy Files EarlGreyV2Bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(TARGET_BUILD_DIR)/../../SampleTool.app/EarlGreyHelperBundles";
+			dstSubfolderSpec = 0;
+			files = (
+				065F250F258D3E3E0085F100 /* EarlGreyV2Bundle.bundle in Copy Files EarlGreyV2Bundle */,
+			);
+			name = "Copy Files EarlGreyV2Bundle";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -226,6 +238,7 @@
 				065F24B4258D37E70085F100 /* Frameworks */,
 				065F24B5258D37E70085F100 /* Resources */,
 				065F24EC258D392C0085F100 /* Copy Files EarlGreyV2 */,
+				065F250E258D3E080085F100 /* Copy Files EarlGreyV2Bundle */,
 			);
 			buildRules = (
 			);
