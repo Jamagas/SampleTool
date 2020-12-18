@@ -85,6 +85,7 @@
 		065F24BB258D37E70085F100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065F24C3258D38200085F100 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		065F24F0258D39A70085F100 /* EarlGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarlGrey.swift; path = EarlGrey/TestLib/Swift/EarlGrey.swift; sourceTree = SOURCE_ROOT; };
+		065F24F6258D3A0E0085F100 /* EarlGreyV2UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EarlGreyV2UITests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 				065F24F0258D39A70085F100 /* EarlGrey.swift */,
 				065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */,
 				065F24BB258D37E70085F100 /* Info.plist */,
+				065F24F6258D3A0E0085F100 /* EarlGreyV2UITests-Bridging-Header.h */,
 			);
 			path = EarlGreyV2UITests;
 			sourceTree = "<group>";
@@ -221,6 +223,7 @@
 					};
 					065F24B6258D37E70085F100 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = 065F249A258D35A40085F100;
 					};
 				};
@@ -506,6 +509,7 @@
 		065F24BF258D37E70085F100 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarlGreyV2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,6 +520,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = darius.sabaliauskas.EarlGreyV2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EarlGreyV2UITests/EarlGreyV2UITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SampleTool;
@@ -526,6 +532,7 @@
 		065F24C0258D37E70085F100 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = EarlGreyV2UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -536,6 +543,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = darius.sabaliauskas.EarlGreyV2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EarlGreyV2UITests/EarlGreyV2UITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = SampleTool;
