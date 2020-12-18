@@ -17,7 +17,7 @@
 		065F24E5258D384B0085F100 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D2258D38200085F100 /* libTestLib.a */; };
 		065F24ED258D39630085F100 /* AppFramework.framework in Copy Files EarlGreyV2 */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		065F24F1258D39A70085F100 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24F0258D39A70085F100 /* EarlGrey.swift */; };
-		065F250D258D3D3C0085F100 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; };
+		065F250D258D3D3C0085F100 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
