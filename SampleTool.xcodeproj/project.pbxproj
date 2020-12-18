@@ -16,6 +16,7 @@
 		065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */; };
 		065F24E5258D384B0085F100 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D2258D38200085F100 /* libTestLib.a */; };
 		065F24ED258D39630085F100 /* AppFramework.framework in Copy Files EarlGreyV2 */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		065F24F1258D39A70085F100 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24F0258D39A70085F100 /* EarlGrey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyV2UITests.swift; sourceTree = "<group>"; };
 		065F24BB258D37E70085F100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065F24C3258D38200085F100 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
+		065F24F0258D39A70085F100 /* EarlGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarlGrey.swift; path = EarlGrey/TestLib/Swift/EarlGrey.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		065F24B8258D37E70085F100 /* EarlGreyV2UITests */ = {
 			isa = PBXGroup;
 			children = (
+				065F24F0258D39A70085F100 /* EarlGrey.swift */,
 				065F24B9258D37E70085F100 /* EarlGreyV2UITests.swift */,
 				065F24BB258D37E70085F100 /* Info.plist */,
 			);
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065F24F1258D39A70085F100 /* EarlGrey.swift in Sources */,
 				065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
