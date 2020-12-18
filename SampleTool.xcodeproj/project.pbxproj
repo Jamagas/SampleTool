@@ -55,6 +55,13 @@
 			remoteGlobalIDString = FD5048F820FB225100261CBE;
 			remoteInfo = TestLib;
 		};
+		065F250B258D3D160085F100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065F2493258D35A40085F100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 065F249A258D35A40085F100;
+			remoteInfo = SampleTool;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -239,6 +246,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				065F250C258D3D160085F100 /* PBXTargetDependency */,
 			);
 			name = EarlGreyV2Bundle;
 			productName = EarlGreyV2Bundle;
@@ -385,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = 065F249A258D35A40085F100 /* SampleTool */;
 			targetProxy = 065F24BC258D37E70085F100 /* PBXContainerItemProxy */;
+		};
+		065F250C258D3D160085F100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 065F249A258D35A40085F100 /* SampleTool */;
+			targetProxy = 065F250B258D3D160085F100 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
