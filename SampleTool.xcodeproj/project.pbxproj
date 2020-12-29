@@ -19,6 +19,9 @@
 		065F24F1258D39A70085F100 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F24F0258D39A70085F100 /* EarlGrey.swift */; };
 		065F250D258D3D3C0085F100 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065F24D0258D38200085F100 /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		065F250F258D3E3E0085F100 /* EarlGreyV2Bundle.bundle in Copy Files EarlGreyV2Bundle */ = {isa = PBXBuildFile; fileRef = 065F2502258D3B480085F100 /* EarlGreyV2Bundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		FDFBA305258D6FC40093A553 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBA304258D6FC40093A553 /* SwiftTestsHost.swift */; };
+		FDFBA306258D6FC40093A553 /* SwiftTestsHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBA304258D6FC40093A553 /* SwiftTestsHost.swift */; };
+		FDFBA30F258D70030093A553 /* GREYHostApplicationDistantObject+SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBA30E258D70030093A553 /* GREYHostApplicationDistantObject+SwiftTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,9 @@
 		065F24F6258D3A0E0085F100 /* EarlGreyV2UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EarlGreyV2UITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		065F2502258D3B480085F100 /* EarlGreyV2Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarlGreyV2Bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		065F2504258D3B490085F100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFBA303258D6FC30093A553 /* EarlGreyV2Bundle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EarlGreyV2Bundle-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDFBA304258D6FC40093A553 /* SwiftTestsHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestsHost.swift; sourceTree = "<group>"; };
+		FDFBA30E258D70030093A553 /* GREYHostApplicationDistantObject+SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GREYHostApplicationDistantObject+SwiftTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				065F2504258D3B490085F100 /* Info.plist */,
+				FDFBA304258D6FC40093A553 /* SwiftTestsHost.swift */,
+				FDFBA303258D6FC30093A553 /* EarlGreyV2Bundle-Bridging-Header.h */,
+				FDFBA30E258D70030093A553 /* GREYHostApplicationDistantObject+SwiftTests.swift */,
 			);
 			path = EarlGreyV2Bundle;
 			sourceTree = "<group>";
@@ -287,6 +296,7 @@
 					};
 					065F2501258D3B480085F100 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -391,6 +401,7 @@
 			files = (
 				065F24F1258D39A70085F100 /* EarlGrey.swift in Sources */,
 				065F24BA258D37E70085F100 /* EarlGreyV2UITests.swift in Sources */,
+				FDFBA305258D6FC40093A553 /* SwiftTestsHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +409,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFBA30F258D70030093A553 /* GREYHostApplicationDistantObject+SwiftTests.swift in Sources */,
+				FDFBA306258D6FC40093A553 /* SwiftTestsHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +656,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/SampleTool.app/SampleTool";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EarlGreyV2Bundle/Info.plist;
@@ -654,6 +668,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EarlGreyV2Bundle/EarlGreyV2Bundle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/EarlGrey/**",
 					"$(SRCROOT)/EarlGreyV2Bundle/**",
@@ -666,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/SampleTool.app/SampleTool";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EarlGreyV2Bundle/Info.plist;
@@ -677,6 +695,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EarlGreyV2Bundle/EarlGreyV2Bundle-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/EarlGrey/**",
 					"$(SRCROOT)/EarlGreyV2Bundle/**",
